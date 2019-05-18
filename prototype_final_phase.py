@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
@@ -140,7 +137,7 @@ def AssignUserName(i, username):
     #close the popup menu
     cmmd = driver.find_element_by_css_selector("#cell_edit_cancel").click()  
 
-#pass in username for each table row
+#pass-in username for each table row using this algorithim below
 
 cnt = 0
 for i in range(len(ListOfRows)):
