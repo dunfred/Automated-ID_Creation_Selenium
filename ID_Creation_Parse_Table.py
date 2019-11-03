@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
+#Authors: Fred, Aditya, Joshua
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
@@ -126,11 +125,12 @@ df_orignal = pd.concat(frames, sort=False)
 df_orignal.index = np.arange(1,len(df_orignal)+1)
 
 #Save and export to ID_creation_Details.xlsx file
-t = df_orignal.to_excel('/home/klenam/Documents/Python Second Project/ID_creation_Details.xlsx')
+t = df_orignal.to_excel('./save_to/ID_creation_Details.xlsx')
 
-data = pd.read_excel('/home/klenam/Documents/Python Second Project/ID_creation_Details.xlsx')
+data = pd.read_excel('./save_to/ID_cretion_Details.xlsx')
 data
-print("done")
+
+#Done
 
 
 
