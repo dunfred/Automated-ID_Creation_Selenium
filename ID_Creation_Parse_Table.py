@@ -14,7 +14,7 @@ import re
 olm_id = '******'
 password = '******'
 
-driver = webdriver.Chrome("/home/klenam/Downloads/WebDrivers/chromedriver_linux64/chromedriver")
+driver = webdriver.Chrome("./driverpath/chromedriver") #Edit to your driver path
 driver.get("https://airtel.service-now.com")
 driver.maximize_window()
 driver.implicitly_wait(30)
@@ -125,9 +125,9 @@ df_orignal = pd.concat(frames, sort=False)
 df_orignal.index = np.arange(1,len(df_orignal)+1)
 
 #Save and export to ID_creation_Details.xlsx file
-t = df_orignal.to_excel('./save_to/ID_creation_Details.xlsx')
+t = df_orignal.to_excel('./save_to/ID_creation_Details.xlsx') #Edit to your desired location
 
-data = pd.read_excel('./save_to/ID_cretion_Details.xlsx')
+data = pd.read_excel('./save_to/ID_cretion_Details.xlsx')     #Edit to same desired location above
 data
 
 #Done
